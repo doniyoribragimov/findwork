@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FindWork - Специалисты со всего Узбекистана</title>
+    <link rel="shortcut icon" href="images/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <script src="js/fancybox.js" defer></script>
+</head>
+
+<body>
+
+    <div class="content">
+        <header class="header header_admin">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <a class="logo" href="/">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                            <img class="logo__mini" src="images/logo-icon.svg" alt="logo">
+                            <div class="logo__text">Специалисты со всего Узбекистана</div>
+                        </a>
+
+                        <!-- === HEADER LANGUAGES  === -->
+                        <div class="header-languages">
+                            <div class="header-languages__current">
+                                <span>ru</span>
+                                <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 1L8.65079 6.44218C8.2763 6.76317 7.7237 6.76317 7.34921 6.44218L1 1"
+                                        stroke="#353536" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <ul class="header-languages__list">
+                                <li class="header-languages__li">uzb</li>
+                                <li class="header-languages__li">eng</li>
+                            </ul>
+                        </div>
+                        <!-- === HEADER LANGUAGES END === -->
+
+                        <!-- === HEADER LOCATION === -->
+                        <div class="header-location">
+                            <img class="header-location__icon" src="images/location.svg" alt="location icon">
+                            <div class="header-location__info">
+                                <div class="header-location__question">Ваш город ?</div>
+                                <div class="header-location__city">Фергана</div>
+                            </div>
+                        </div>
+                        <!-- === HEADER LOCATION END === -->
+
+
+                    </div>
+                    <div class="header__right">
+                        <div class="header-nav">
+                            <div class="header-nav__current">
+                                <div class="header-profile__name header-profile__hide"><img src="images/workers.svg"
+                                        alt="header icons"> Специалистам</div>
+                                <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 1L8.65079 6.44218C8.2763 6.76317 7.7237 6.76317 7.34921 6.44218L1 1"
+                                        stroke="#4E4E4E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <ul class="header-nav__dropdown">
+                                <li class="header-profile__li">
+                                    <!-- active CLASS FOR .header-profile__link -->
+                                    <a class="header-profile__link" href="#">Регистрация специалистов</a>
+                                </li>
+
+                                <li class="header-profile__li">
+                                    <a class="header-profile__link" href="#">Вход для специалистов</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header-nav__current header-nav__alert">
+                            <img src="images/message-icon.svg" alt="message-icon">
+                            Сообщение
+                            <div class="header-nav__badge"><span>13</span></div>
+
+                            <div class="header-nav__message">
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-5.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Авазхон Аблуллаев</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="header-nav__current header-nav__alert header-nav__alert-2">
+                            <img src="images/orders.svg" alt="message-icon">
+                            Мои заказы
+                            <div class="header-nav__badge"><span>3</span></div>
+
+                            <div class="header-nav__message">
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-5.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Авазхон Аблуллаев</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="header-nav__message-item" href="#">
+                                    <img class="header-nav__message-avi" src="images/profile-photo-2.png"
+                                        alt="profile img">
+                                    <div class="header-nav__message-info">
+                                        <div class="header-nav__message-name">Давлат Каримов</div>
+                                        <div class="header-nav__message-write">
+                                            <div class="header-nav__message-chat">Можете выйти на Связь? </div>
+                                            <div class="header-nav__message-badge">11</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="header-profile">
+                            <div class="header-profile__current">
+                                <img class="header-profile__avi" src="images/header-profile-photo.png"
+                                    alt="header profile">
+                                <div class="header-profile__name">Андрей</div>
+                                <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 1L8.65079 6.44218C8.2763 6.76317 7.7237 6.76317 7.34921 6.44218L1 1"
+                                        stroke="#4E4E4E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <ul class="header-profile__dropdown">
+                                <li class="header-profile__li">
+                                    <!-- active CLASS FOR .header-profile__link -->
+                                    <a class="header-profile__link" href="#">Мой профиль</a>
+                                </li>
+
+                                <li class="header-profile__li">
+                                    <a class="header-profile__link" href="#">Мои заказы</a>
+                                </li>
+
+                                <li class="header-profile__li">
+                                    <a class="header-profile__link" href="#">Выйти</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="splitter splitter_wrap">
+                    <div class="duty">
+                        <div class="duty__tops">
+                            <div class="duty__deadline">
+                                Заказ оставлен <span>49</span> минут назад
+                            </div>
+
+                            <div class="duty__seen">
+                                <img src="images/eye.svg" alt="eye icon">
+                                Просмотрели: <span>122</span>
+                            </div>
+                        </div>
+
+                        <div class="duty__head">
+                            <!-- 
+                                green - для открыт
+                                yellow - для в процессе
+                                red - для закрыт
+                             -->
+                            <div class="duty__marker green">
+                                ТОП ОБЪЯВЛЕНИЕ
+                            </div>
+                            <div class="duty__topcontent">
+                                <h2 class="duty__title">Продается дом </h2>
+                                <div class="duty__price"><span>За 144 000 000 y.e</span></div>
+                                <div class="duty__plan">Недвижимость: <span>Дома</span> <div class="blue">(Продажа)</div></div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="duty__body">
+                            <div class="duty__item duty__mores">
+                                <div class="duty__infos">
+                                    <h4 class="duty__heading">Описание:</h4>
+                                    <p class="duty__texts">Предлагается в аренду светлая 3 комнатная квартира с панорамным остеклением в элитном Клубном доме SOHO+NOHO на 6 этаже.Планировкой предусмотрено: гостиная комната совмещенная с кухонной зоной, спальня, детская комната, санузел.В квартире сделан качественный ремонт из дорогостоящих материалов. Имеется вся необходимая мебель и техника от ведущих фирм производителей.</p>
+                                </div>
+
+                                <div class="details-flags nt">
+                                    <div class="details-flags__slider">
+                                        <a data-fancybox="gallery-product" href="images/nexia.png">
+                                            <img class="details-flags__img" src="images/nexia.png" alt="details img">
+                                        </a>
+
+                                        <a data-fancybox="gallery-product" href="images/blog-1.png">
+                                            <img class="details-flags__img" src="images/blog-1.png" alt="details img">
+                                        </a>
+
+                                        <a data-fancybox="gallery-product" href="images/blog-3.png">
+                                            <img class="details-flags__img" src="images/blog-3.png" alt="details img">
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="duty__item">
+                                <div class="duty__infos">
+                                    <ul class="duty__flats">
+                                        <li class="duty__flat">
+                                            <img src="images/flat-2.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Общая площадь:</div>
+                                                <div class="duty__numbers">94 м²</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-2.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Жилая площадь:</div>
+                                                <div class="duty__numbers">60</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Санузел:</div>
+                                                <div class="duty__numbers">Раздельный</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-2.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Ремонт:</div>
+                                                <div class="duty__numbers">Евроремонт</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-2.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Количество комнат: </div>
+                                                <div class="duty__numbers">60</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Высота потолков:</div>
+                                                <div class="duty__numbers">21 м</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Этажность дома:</div>
+                                                <div class="duty__numbers">88</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Этаж:</div>
+                                                <div class="duty__numbers">21</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Год постройки:</div>
+                                                <div class="duty__numbers">2022</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Площадь кухни:</div>
+                                                <div class="duty__numbers">94 м²</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Электричество:</div>
+                                                <div class="duty__numbers">Есть</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Планировка:</div>
+                                                <div class="duty__numbers">Смежная</div>
+                                            </div>
+                                        </li>
+                                        <li class="duty__flat">
+                                            <img src="images/flat-1.svg" alt="flat icon">
+                                            <div class="duty__mains">
+                                                <div class="duty__kv">Тип строения:</div>
+                                                <div class="duty__numbers">Кирпичный</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="duty__item">
+                                <div class="duty__infos">
+                                    <h4 class="duty__heading">Детали аренды:</h4>
+                                    <ul class="duty__list duty__list_blue">
+                                        <li class="duty__li"><b>На участке есть:</b> Огород, Охрана, Сауна баня, Гараж, Бассейн, Летняя кухня</li>
+                                        <li class="duty__li"><b>Частный или бизнес:</b> Частное лицо, Бизнес  </li>
+                                        <li class="duty__li"><b>Комиссионные:</b> Да, Нет</li>
+                                        <li class="duty__li"><b>Мебелированы:</b> Да, Нет</li>
+                                        <li class="duty__li"><b>Расположение:</b> В городе, Возле водоема реки, В пригороде, В предгорьях, В дачном массиве, Вдоль трассы, На закрытой территории, В сельской местности</li>
+                                        <li class="duty__li"><b>Вода:</b> В доме, Центральное водоснобжение, Скважина, Возможное подведение, Нет, 
+                                            На границе, Колодец на участке</li>
+                                        <li class="duty__li"><b>Отопление:</b> Центральное, На газе, Смешанное, Электрическое, На твердом топливе, 
+                                            Без отопления, На жидком топливе</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+
+                           
+
+                            <div class="duty__item">
+                                <div class="duty__infos">
+                                    <h4 class="duty__heading">В квартире есть:</h4>
+                                    <ul class="duty__panels">
+                                        <li class="duty__panel">Интернет</li>
+                                        <li class="duty__panel">Холодильник</li>
+                                        <li class="duty__panel">Кондиционер</li>
+                                        <li class="duty__panel">Кабильное ТВ</li>
+                                        <li class="duty__panel">Кухня</li>
+                                        <li class="duty__panel">Телевизор</li>
+                                        <li class="duty__panel">Спутниковое ТВ</li>
+                                        <li class="duty__panel">Телевизор</li>
+                                        <li class="duty__panel">Телефон</li>
+                                        <li class="duty__panel">Балкон</li>
+                                        <li class="duty__panel">Подвал кладовка</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="duty__item">
+                                <div class="duty__infos">
+                                    <h4 class="duty__heading">Рядом есть:</h4>
+                                    <ul class="duty__panels">
+                                        <li class="duty__panel">Больница поликлиника</li>
+                                        <li class="duty__panel">Детский сад</li>
+                                        <li class="duty__panel">Школа</li>
+                                        <li class="duty__panel">Стоянка</li>
+                                        <li class="duty__panel">Остановки</li>
+                                        <li class="duty__panel">Развлекательные заведения</li>
+                                        <li class="duty__panel">Рестораны кафе</li>
+                                        <li class="duty__panel">Супермаркет магазин</li>
+                                        <li class="duty__panel">Детская площадка</li>
+                                        <li class="duty__panel">Парк зеленая зона</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="duty__item">
+                                <div class="duty__infos">
+                                    <h4 class="duty__heading">Время размещения:</h4>
+                                    <ul class="duty__list">
+                                        <li class="duty__li">25 сент. (вс), </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="duty__item">
+                                <h4 class="duty__heading">Номер объявления:</h4>
+                                <div class="duty__number">
+                                    <img src="images/nums.svg" alt="num icon"> <span>51145623</span>
+                                </div>
+
+                            </div>
+
+                            <div class="duty__item duty__place">
+                                <div class="duty__location">
+                                    <h4 class="duty__heading">Адрес:</h4>
+                                    <div class="duty__city">Город - Фергана</div>
+                                    <div class="duty__street">Фрунзенский массив улица Тадбиркорлар 12 дом</div>
+                                </div>
+
+                                <div class="details-content__geo">
+                                    <img src="images/location-bat.svg" alt="location icon">
+                                    Показать карту
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="suggest">
+                        <div class="details-content__client">
+                            <h3 class="details-content__title">Заказчик:</h3>
+
+                            <a class="details-content__profile" href="#">
+                                <img class="details-content__avi" src="images/client-1.png" alt="client img">
+                                <div class="details-content__data">
+                                    <div class="details-content__fullname">Дмитрий Артемьев</div>
+                                    <div class="details-content__status active">В сети</div>
+                                </div>
+                            </a>
+
+                            <div class="details-content__more">
+                                <div class="details-content__about">
+                                    <div class="details-content__icon">
+                                        <img src="images/details-icon-1.svg" alt="details icon">
+                                    </div>
+
+                                    <div class="details-content__information">На Профи с 18 октября 2021</div>
+                                </div>
+                                <div class="details-content__about">
+                                    <div class="details-content__icon">
+                                        <img src="images/details-icon-2.svg" alt="details icon">
+                                    </div>
+
+                                    <div class="details-content__information">Подтвердил номер телефона</div>
+                                </div>
+                                <div class="details-content__about">
+                                    <div class="details-content__icon">
+                                        <img src="images/details-icon-3.svg" alt="details icon">
+                                    </div>
+
+                                    <div class="details-content__like">3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suggest__buttons">
+                            <button class="suggest__btn btn btn_darkblue">Посмотреть контакты</button>
+                            <button class="suggest__btn btn btn_blue">Написать сообщение</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <br><br>
+             
+                <!-- === APP === -->
+                <section class="app">
+                    <img class="app__circle app__circle_bottom" src="images/circle-bottom.svg" alt="circle img">
+                    <img class="app__circle app__circle_top" src="images/circle-top.svg" alt="circle img">
+                    <div class="app__inner">
+                        <img class="app__img" src="images/mobile.png" alt="mobile app">
+                        <div class="app__info">
+                            <h2 class="app__title">Скачайте приложение <br>
+                                и пользуйтесь <span class="blue">Find</span><span class="red">Work</span> где угодно
+                            </h2>
+                            <p class="app__text">Скачивайте приложение и найдите подработку
+                                или постоянную работу с удобным графиком
+                                и хорошей оплатой труда</p>
+                            <div class="app__btns">
+                                <a class="app__link" href="#">
+                                    <img src="images/appstore.svg" alt="app btn">
+                                </a>
+
+                                <a class="app__link" href="#">
+                                    <img src="images/g-play.svg" alt="app btn">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- FOOTER TOP -->
+                    <div class="footer__top">
+                        <div class="logo">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                            <div class="logo__text">Специалисты со всего Узбекистана</div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER CONTENT -->
+                    <div class="footer__content">
+                        <ul class="footer__list">
+                            <li><a class="footer__link" href="#">Все услуги</a></li>
+                            <li><a class="footer__link" href="#">Все отзывы</a></li>
+                            <li><a class="footer__link" href="#">Вакансии</a></li>
+                            <li><a class="footer__link" href="#">Все обьявления</a></li>
+                            <li><a class="footer__link" href="#">Условия использования</a></li>
+                            <li><a class="footer__link" href="#">Частые вопросы</a></li>
+                        </ul>
+
+                        <ul class="footer__list">
+                            <li><a class="footer__link" href="#">Каталог специалистов</a></li>
+                            <li><a class="footer__link" href="#">Вход для специалистов</a></li>
+                            <li><a class="footer__link" href="#">Оплата за сервис</a></li>
+                            <li><a class="footer__link" href="#">Служба поддержки</a></li>
+                        </ul>
+
+                        <ul class="footer__list">
+                            <li><a class="footer__link" href="#">О компании</a></li>
+                            <li><a class="footer__link" href="#">Вакансии компании</a></li>
+                            <li><a class="footer__link" href="#">Жизнь в Findwork</a></li>
+                            <li><a class="footer__link" href="#">Партнёрская программа</a></li>
+                            <li><a class="footer__link" href="#">Блог</a></li>
+                        </ul>
+
+                        <div class="footer__info">
+                            <div class="footer__help">
+                                Служба поддержки:
+                                <a href="tel:88003334545">8 800 333-45-45</a>
+                            </div>
+
+                            <div class="footer__apps">
+                                <a class="footer__app" href="#">
+                                    <img src="images/appstore.svg" alt="app icon">
+                                </a>
+
+                                <a class="footer__app" href="#">
+                                    <img src="images/g-play.svg" alt="app icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER BOTTOM -->
+                    <div class="footer__bottom">
+                        <div class="footer__rules">
+                            © 2023 Findwork.uz
+                            <a href="#">Правила сервиса</a>
+                        </div>
+                        <div class="footer__warning">
+                            <img src="images/age-restrict.svg" alt="age restrict">
+                            Информация, опубликованная на данном сайте, предназначена для любой
+                            аудитории, если иное не указано дополнительно в отношении отдельных материалов.
+                        </div>
+                        <nav class="socials">
+                            <a class="socials__item" href="#">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.75 13C13.817 13 12.25 14.567 12.25 16.5C12.25 18.433 13.817 20 15.75 20C17.683 20 19.25 18.433 19.25 16.5C19.25 14.567 17.683 13 15.75 13Z"
+                                        fill="#4E4E4E" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 9.5C0 4.66751 3.91751 0.75 8.75 0.75H22.75C27.5825 0.75 31.5 4.66751 31.5 9.5V23.5C31.5 28.3325 27.5825 32.25 22.75 32.25H8.75C3.91751 32.25 0 28.3325 0 23.5V9.5ZM8.75 16.5C8.75 12.634 11.884 9.5 15.75 9.5C19.616 9.5 22.75 12.634 22.75 16.5C22.75 20.366 19.616 23.5 15.75 23.5C11.884 23.5 8.75 20.366 8.75 16.5ZM23.625 10.375C24.5915 10.375 25.375 9.5915 25.375 8.625C25.375 7.6585 24.5915 6.875 23.625 6.875C22.6585 6.875 21.875 7.6585 21.875 8.625C21.875 9.5915 22.6585 10.375 23.625 10.375Z"
+                                        fill="#4E4E4E" />
+                                </svg>
+                            </a>
+
+                            <a class="socials__item" href="#">
+                                <svg width="35" height="29" viewBox="0 0 35 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.5 0.5C13.6079 0.5 9.46971 0.765214 6.53013 1.00376C3.31364 1.26479 0.728701 3.75399 0.414183 6.9944C0.203948 9.16041 0 11.9205 0 14.5C0 17.0795 0.203948 19.8396 0.414183 22.0056C0.728701 25.246 3.31365 27.7352 6.53013 27.9962C9.46971 28.2348 13.6079 28.5 17.5 28.5C21.3921 28.5 25.5303 28.2348 28.4699 27.9962C31.6864 27.7352 34.2713 25.246 34.5858 22.0056C34.7961 19.8396 35 17.0795 35 14.5C35 11.9205 34.7961 9.16041 34.5858 6.9944C34.2713 3.75399 31.6864 1.26479 28.4699 1.00376C25.5303 0.765214 21.3921 0.5 17.5 0.5ZM15.575 19.6529L22.925 15.4093C23.625 15.0052 23.625 13.9948 22.925 13.5907L15.575 9.34715C14.875 8.943 14 9.44818 14 10.2565L14 18.7435C14 19.5518 14.875 20.057 15.575 19.6529Z"
+                                        fill="#4E4E4E" />
+                                </svg>
+                            </a>
+                            <a class="socials__item" href="#">
+                                <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.625 34.8044C29.0447 33.5379 35.5 26.2728 35.5 17.5C35.5 7.83502 27.665 0 18 0C8.33502 0 0.5 7.83502 0.5 17.5C0.5 26.2728 6.95529 33.5379 15.375 34.8044V22.75H12.75C11.3003 22.75 10.125 21.5747 10.125 20.125C10.125 18.6753 11.3003 17.5 12.75 17.5H15.375V14C15.375 10.6173 18.1173 7.875 21.5 7.875H22.375C23.8247 7.875 25 9.05025 25 10.5C25 11.9497 23.8247 13.125 22.375 13.125H21.5C21.0168 13.125 20.625 13.5168 20.625 14V17.5H23.25C24.6997 17.5 25.875 18.6753 25.875 20.125C25.875 21.5747 24.6997 22.75 23.25 22.75H20.625V34.8044Z"
+                                        fill="#4E4E4E" />
+                                </svg>
+                            </a>
+                            <a class="socials__item" href="#">
+                                <svg width="28" height="35" viewBox="0 0 28 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.5 0C19.433 0 21 1.567 21 3.5C21 6.03283 22.8025 8.15815 25.1971 8.64485C27.0914 9.02985 28.3149 10.8776 27.9299 12.7718C27.5449 14.6661 25.6972 15.8896 23.8029 15.5046C22.821 15.305 21.8816 14.9881 21 14.5691V24.5C21 30.299 16.299 35 10.5 35C4.70101 35 0 30.299 0 24.5C0 19.6026 3.34963 15.4964 7.87759 14.331C9.74958 13.8492 11.6577 14.9761 12.1395 16.8481C12.6213 18.7201 11.4944 20.6282 9.62241 21.1101C8.11208 21.4988 7 22.8739 7 24.5C7 26.433 8.567 28 10.5 28C12.433 28 14 26.433 14 24.5V3.5C14 1.567 15.567 0 17.5 0Z"
+                                        fill="#4E4E4E" />
+                                </svg>
+                            </a>
+                            <a class="socials__item" href="#">
+                                <svg width="36" height="31" viewBox="0 0 36 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M32.0307 0.71005C33.9345 -0.0915826 35.9755 1.5183 35.6393 3.55652L31.6687 27.6307C31.2859 29.952 28.7365 31.2838 26.6069 30.1271C24.8249 29.1592 22.181 27.6694 19.7982 26.1125C18.6083 25.335 14.965 22.8419 15.4128 21.0672C15.7957 19.5498 21.9206 13.8484 25.4206 10.4578C26.7954 9.12596 26.1693 8.35653 24.5456 9.58282C20.5178 12.6248 14.0512 17.2499 11.9128 18.5516C10.0261 19.7 9.04095 19.8959 7.86591 19.7C5.72018 19.3424 3.73085 18.7887 2.10669 18.1154C-0.0884561 17.2054 0.0184707 14.1889 2.10521 13.3102L32.0307 0.71005Z"
+                                        fill="#4E4E4E" />
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MAP MODAL === -->
+
+    <div class="modal-map">
+        <div class="modal-map__inner">
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.com/maps/10336/phergana/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Фергана</a><a
+                    href="https://yandex.com/maps/10336/phergana/?feedback=map%2Fedit&feedback-context=map.controls&ll=71.785572%2C40.374848&utm_medium=mapframe&utm_source=maps&z=18.6"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Ферганы с улицами и номерами
+                    домов — Яндекс Карты</a><iframe
+                    src="https://yandex.com/map-widget/v1/?feedback=map%2Fedit&feedback-context=map.controls&ll=71.785572%2C40.374848&z=18.6"
+                    width="100%" height="280" frameborder="0" allowfullscreen="true"
+                    style="position:relative;"></iframe></div>
+            <button class="btn btn_red">Выбрать</button>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/imask.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

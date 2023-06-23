@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FindWork - Специалисты со всего Узбекистана</title>
+    <link rel="shortcut icon" href="images/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <script src="js/fancybox.js" defer></script>
+</head>
+
+<body>
+
+    <div class="modal active modal-template modal-task">
+        <div class="modal__inner">
+
+            <div class="modal-task__head">
+                <h2 class="modal-task__title">Поклейка обоев</h2>
+                <div class="modal-task__price"><span>До 1 000 000 сум /</span> за всю работу</div>
+                <div class="modal-task__bottom">
+                    <div class="modal-task__type">Строительство: <span>поклейка обоев</span></div>
+                    <div class="modal-task__view">Сегодня просмотров:
+                        <img src="images/eye.svg" alt="eye icon">
+                        12
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-task__body">
+                <div class="modal-task__warning">
+                    <img src="images/info-icon.svg" alt="info icon">
+                    В этом заказе ваш отклик будет 1-м по рейтингу.
+                </div>
+
+                <h5 class="modal-task__minititle">Предложить свою цену</h5>
+                <input type="number" name="price" placeholder="Цена*">
+                <h5 class="modal-task__minititle">Оставьте свое сообщение заказчику,
+                    опишите подробнее свое предложение</h5>
+                <textarea class="modal-task__textarea" name="message" placeholder="Написать сообщение*"></textarea>
+
+                <img class="modal-want__close" src="images/x-grey.svg" alt="x icon">
+
+                <a class="btn btn_darkblue" href="#">Откликнуться на задание</a>
+                <div class="modal-task__plus">Заказчик получит уведомление</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/imask.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
