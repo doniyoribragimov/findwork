@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/fancybox.css">
     <script src="js/fancybox.js" defer></script>
+    
 </head>
 
 <body>
@@ -255,6 +256,10 @@
             </div>
         </header>
 
+        <div class="mono">
+
+        </div>
+
         <main class="main">
             <div class="container">
                 <div class="splitter splitter_wrap">
@@ -269,24 +274,20 @@
                                 Просмотрели: <span>122</span>
                             </div>
                         </div>
-
                         <div class="duty__head">
                             <!-- 
                                 green - для открыт
                                 yellow - для в процессе
                                 red - для закрыт
                              -->
-                            <div class="duty__marker green">
+                            <div class="duty__marker yellow">
                                 ТОП ОБЪЯВЛЕНИЕ
                             </div>
                             <div class="duty__topcontent">
                                 <h2 class="duty__title">Отремонтировать кузов</h2>
                                 <div class="duty__price"><span>За 144 000 000 y.e</span></div>
-                                <div class="duty__plan">Транспорт : <span>Услуги</span> </div>
+                                <div class="duty__plan">Транспорт : <span>Услуги</span></div>
                             </div>
-
-
-
                         </div>
                         <div class="duty__body">
                             <div class="duty__item duty__mores">
@@ -314,19 +315,23 @@
                                 </div>
                             </div>
 
-              
-
                             <div class="duty__item">
                                 <div class="duty__infos">
-                                    <h4 class="duty__heading">Детали аренды:</h4>
-                                    <ul class="duty__list duty__list_blue">
-                                        <li class="duty__li"><b>Торг:</b> Да, Нет</li>
-                                        <li class="duty__li"><b>Категория услуги:</b>  Автомойки, Автострахование, Автошколы, Такси, Вскрытие авто, Грузоперевозки
-                                            Замена масел и жидкостей, Тех.осмотр, Выкуп авто, Прокат аренда, Изготовление ключей, Шиномонтаж
-                                            Химчистка полировка, Хранение шин, Эвакуатор, Вождение </li>
-                                       
-                                       
-                                    </ul>
+                                    <h4 class="duty__heading">Детали:</h4>
+                                    <div class="duty-info">
+                                        <div class="duty-info__item">
+                                            <div class="duty-info__heading">Торг:</div>
+                                            <div class="duty-info__line"></div>
+                                            <div class="duty-info__name">Да</div>
+                                        </div>
+
+                                        <div class="duty-info__item">
+                                            <div class="duty-info__heading">Категория услуги:</div>
+                                            <div class="duty-info__line"></div>
+                                            <div class="duty-info__name">Автоэлектрика</div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -402,6 +407,9 @@
                         <div class="suggest__buttons">
                             <button class="suggest__btn btn btn_darkblue">Посмотреть контакты</button>
                             <button class="suggest__btn btn btn_blue">Написать сообщение</button>
+                            <div class="complain">
+                                Пожаловаться на обьявление
+                            </div>
                         </div>
                     </div>
 

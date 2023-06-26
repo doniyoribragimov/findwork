@@ -366,7 +366,7 @@
     .slider {
         &__arrow {
             &_next {
-                top: 30%;
+                top: 35%;
             }
         }
     }
@@ -375,21 +375,14 @@
 
     .starter {
         height: auto;
-        display: flex;
-        justify-content: space-between;
 
         &__tab {
             font-size: 16px;
             white-space: nowrap;
         }
 
-        &__slider {
-            width: 400px;
-        }
-
         &__profession {
-            height: 450px;
-            width: 100%;
+            height: 500px;
         }
 
         &__title {
@@ -408,6 +401,15 @@
             grid-template-areas: ' name name' 'rating feeds';
             width: fit-content;
             padding: 10px 25px;
+        }
+
+        &__rights{
+            .process__video{
+                position: absolute;
+                top: 34%;
+                left: -40px;
+                z-index: 2;
+            }
         }
 
         &__stars {
@@ -930,6 +932,21 @@
     }
     
 
+    .payment{
+        &__item{
+            padding: 16px;
+        }
+
+        &__heading{
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        &__inner{
+            gap: 16px;
+        }
+    }
+
 }
 
 
@@ -972,10 +989,9 @@
 
     // --------------------------------------------
 
-    .starter {
-        &__slider {
-            width: 300px;
-        }
+
+    .starter{
+        grid-template-columns: 1fr 0.5fr;
     }
 
     // --------------------------------------------
@@ -1258,6 +1274,16 @@
     .client-page{
         .suggest-flags{
             display: flex;
+        }
+    }
+
+    .suggest__buttons{
+        .btn{
+            width: fit-content;
+        }
+
+        .complain{
+            margin: unset;
         }
     }
 }
@@ -2135,6 +2161,32 @@
         }
     }
 
+    .starter{
+        grid-template-columns: 0.7fr;
+    }
+
+
+    .payment{
+        &__inner{
+            gap: 48px 16px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .starter{
+        &__rights{
+            .process__video{
+                display: none;
+            }
+        }
+
+        &__bottom{
+            gap: 16px;
+            .process__video{
+                display: flex;
+            }
+        }
+    }
 
 }
 
@@ -2916,11 +2968,27 @@
         }
     }
 
+    .starter{
+        grid-template-columns: 0.8fr;
+    }
+
+
+    .payment{
+        &__inner{
+            gap: 36px 16px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 
 @media (max-width: 850px) {
     .doubler_chat>div:last-child {
         display: none;
+    }
+
+    
+    .starter{
+        grid-template-columns: 1fr;
     }
 
     // --------------------------------------------
@@ -3190,6 +3258,10 @@
             }
         }
 
+    }
+
+    .duty-info{
+        grid-template-columns: 1fr;
     }
 
 }
@@ -3572,7 +3644,7 @@
             gap: 8px;
             overflow-x: auto;
             padding: 5px 10px;
-
+            display: flex;
             &::-webkit-scrollbar {
                 display: none;
             }
@@ -3580,7 +3652,11 @@
 
         &__tab {
             border: 2px solid $darkBlue;
-
+            min-width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
             &.active {
                 background-color: $darkBlue;
             }
@@ -5921,6 +5997,16 @@
         }
     }
 
+    .payment{
+        &__top{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__inner{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
 
 }
 
@@ -7011,6 +7097,10 @@
             }
         }
 
+        &__marker{
+            font-size: 14px;
+        }
+
         &__texts {
             font-size: 14px;
         }
@@ -7109,6 +7199,26 @@
             flex-direction: column;    
         }
     }
+
+    .duty-info{
+        font-size: 14px;
+        gap: 12px;
+        &__item{
+            gap: 5px;
+        }
+    }
+
+    .suggest__buttons{
+        .btn{
+            width: 100%;
+        }
+
+        .complain{
+            margin: auto;
+            margin-top: 10px;
+        }
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -7149,11 +7259,22 @@
         }
     }
 
+    .duty-info{
+        font-size: 12px;
+    }
+
     .searchbar__tools .searchbar__content,
     .searchbar__tools .searchbar-filter,
     .searchbar__tools .searchbar-category,
     .searchbar__tools .searchbar__location {
         height: 50px;
+    }
+
+
+    .starter{
+        &__title{
+            font-size: 26px;
+        }
     }
 
 

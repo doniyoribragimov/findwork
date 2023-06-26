@@ -1182,11 +1182,11 @@ input[type='checkbox'] {
     transition: all 0.2s ease-out;
 
     &_prev {
-      top: 45%;
+      top: 50%;
     }
 
     &_next {
-      top: 35%;
+      top: 40%;
     }
 
     &:hover {
@@ -1226,3 +1226,27 @@ input[type='checkbox'] {
   }
 }
 
+.complain{
+  color: $red;
+  font-weight: 600;
+  position: relative;
+  padding-left: 25px;
+  @extend %normalHover;
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/warning.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
