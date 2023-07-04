@@ -78,151 +78,219 @@
                     <nav class="tabs">
                         <a href="freelancer-search.html" class="tabs__item">Найти специалиста</a>
                         <a href="tasks-search.html" class="tabs__item">Найти задания</a>
-                        <a href="rent-search.html" class="tabs__item active">Взять в аренду</a>
+                        <a href="rent-search.html" class="tabs__item active">Обьявление</a>
                         <a href="vacancy-search.html" class="tabs__item">Вакансии</a>
                     </nav>
 
                     <!-- BREADCRUMB -->
                     <div class="breadcrumb">
                         <a class="breadcrumb__item_link" href="#">Главная</a>
-                        <div class="breadcrumb__item">Bзять в аренду</div>
+                        <div class="breadcrumb__item">Обьявление</div>
                     </div>
 
                 </div>
                 <div class="divider divider_reverse">
-                    <aside class="aside filter aside_none">
-                        <div class="filter__head">
-                            <h2 class="filter__title">Фильтр</h2>
-                            <div class="filter__collapse">Свернуть</div>
-                        </div>
-                        <div class="filter__content">
-                            <h2 class="filter__title">Категории аренд:</h2>
-                            <ul class="filter__list">
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Недвижимость
-                                        <span>102</span>
-                                    </label>
-                                </li>
+                    <aside class="aside filter filter__nobg aside_none">
 
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Электроника
-                                        <span>200</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Бизнес и услуги
-                                        <span>356</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Дом и сад
-                                        <span>650</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Мода и стиль
-                                        <span>788</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Транспорт
-                                        <span>477</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Детский мир
-                                        <span>500</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Хобби, отдых и спорт
-                                        <span>401</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Строительство
-                                        <span>705</span>
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Спецтехника
-                                        <span>400</span>
-                                    </label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="filter__region">
-                            <h2 class="filter__title">Город / Регион:</h2>
-                            <select class="filter__select" name="region">
-                                <option selected disabled>Вся страна</option>
-                                <option>Фергана</option>
-                                <option>Андижан</option>
-                                <option>Самарканд</option>
-                            </select>
-                        </div>
-                        <a class="filter__btn btn btn_red" href="#">
-                            <div class="filter__show">Показать</div>
-                            <div class="filter__count">
-                                <span>1255</span> обьявлений
+                        <div class="filter-selected">
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Правила:</span> Можно с детьми </div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
                             </div>
-                        </a>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Удобства:</span> Микроволновая печь</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Доп.Преимущества:</span> Бассейн</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__all">Сбросить фильтр</div>
+                        </div>
+
+                        <div class="filter__all">
+                            <div class="filter__head">
+                                <h2 class="filter__title">Фильтр</h2>
+                                <div class="filter__collapse">Свернуть</div>
+                            </div>
+                            <div class="filter__content">
+                                <h2 class="filter__title">Категории аренд:</h2>
+                                <ul class="filter__list">
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Недвижимость
+                                            <span>102</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Электроника
+                                            <span>200</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Бизнес и услуги
+                                            <span>356</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Дом и сад
+                                            <span>650</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Мода и стиль
+                                            <span>788</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Транспорт
+                                            <span>477</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Детский мир
+                                            <span>500</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Хобби, отдых и спорт
+                                            <span>401</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Строительство
+                                            <span>705</span>
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Спецтехника
+                                            <span>400</span>
+                                        </label>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                            <div class="filter__region">
+                                <h2 class="filter__title">Город / Регион:</h2>
+                                <select class="filter__select" name="region">
+                                    <option selected disabled>Вся страна</option>
+                                    <option>Фергана</option>
+                                    <option>Андижан</option>
+                                    <option>Самарканд</option>
+                                </select>
+                            </div>
+                            <a class="filter__btn btn btn_red" href="#">
+                                <div class="filter__show">Показать</div>
+                                <div class="filter__count">
+                                    <span>1255</span> обьявлений
+                                </div>
+                            </a>
+                        </div>
                     </aside>
                     <div class="tasks">
-                        <div class="searchbar searchbar_two">
+                        <div class="searchbar searchbar_two searchbar_three">
                             <div class="filters__btn">
                                 <img src="images/searchbar-filter.svg" alt="filter icon">
                                 Фильтр
                             </div>
-                            <div class="searchbar__content">
-                                <img src="images/loop-icon.svg" alt="search icon">
-                                <input type="text" name="search" placeholder="Поиск обьявлений">
-                            </div>
+                                <div class="searchbar__content">
+                                    <img src="images/loop-icon.svg" alt="search icon">
+                                    <input type="text" name="search" placeholder="Поиск обьявлений">
+                                </div>
+
+                                <div class="searchbar-view">
+                                    <div class="searchbar-view__item">
+                                        <img src="images/view-1.svg" alt="view icon">
+                                    </div>
+                                    <div class="searchbar-view__item active">
+                                        <img src="images/view-2.svg" alt="view icon">
+                                    </div>
+                                </div>
 
 
                         </div>
 
-                        <h2 class="searchbar__result">
-                            Найдено заданий в данной категории: <span>235</span>
-                        </h2>
+                        <div class="searchbar__bots">
+                            <h2 class="searchbar__result">
+                                Найдено заданий в данной категории: <span>235</span>
+                            </h2>
+
+                            <div class="searchbar__rights">
+                                Сортировать по: 
+                                <select class="searchbar__select" name="filter">
+                                    <option>По дороже</option>
+                                    <option>По дешевле</option>
+                                    <option>Топ объявления</option>
+                                    <option>Новые</option>
+                                    <option>Рекомендуемые</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="tasks__selecteds">
+                            <div class="filter-selected">
+                                <div class="filter-selected__item">
+                                    <div class="filter-selected__name"><span>Правила:</span> Можно с детьми </div>
+                                    <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                                </div>
+    
+                                <div class="filter-selected__item">
+                                    <div class="filter-selected__name"><span>Удобства:</span> Микроволновая печь</div>
+                                    <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                                </div>
+    
+                                <div class="filter-selected__item">
+                                    <div class="filter-selected__name"><span>Доп.Преимущества:</span> Бассейн</div>
+                                    <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                                </div>
+    
+                            </div>
+                            <div class="filter-selected__all">Сбросить фильтр</div>
+                        </div>
 
                         <div class="tasks__content">
                             <div class="tasks__item">
+                                <div class="tasks__badges">
+                                    <div class="tasks__badge green">PREMIUM</div>
+                                    <div class="tasks__badge">Топ</div>
+                                </div>
                                 <a class="tasks__wrapper" href="#"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
-                                    <div class="tasks__link">Сдаётся дом, Метро Хамза</div>
-                                    <div class="tasks__price">
-                                        <span>1 200 000 </span> - <span>1 500 000</span> сум
-                                    </div>
+                                <div class="tasks__head tasks__head_badge">
+                                    <div class="tasks__link">Сдаётся дом, Метро Хамза <span>(Объявление)
+                                    </span></div>
+                                   
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
@@ -269,37 +337,42 @@
                                     </div>
                                 </div>
                                 <!-- TASK FOOT -->
-                                <div class="tasks__foot">
+                                <div class="tasks__foot tasks__foot_bots">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
-                                            <img class="tasks__avi" src="images/profile-photo-6.png" alt="tasks avi">
-                                            <div class="tasks__name">Санжар Артемьев</div>
+                                            <img class="tasks__avi" src="images/fw.svg" alt="tasks avi">
+                                            <div class="tasks__name">OOO FindWork</div>
                                         </a>
                                     </div>
-                                    <div class="tasks__time">
-                                        <img src="images/blue-dot.svg" alt="dot">
-                                        <span>12 минут назад</span>
+
+                                    <div class="tasks__right">
+                                        <div class="tasks__price">
+                                            <span>1 200 000 </span> - <span>1 500 000</span> сум
+                                        </div>
+                                            <div class="tasks__id">ID: <span>48107258</span></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="tasks__item">
+                                <div class="tasks__badges">
+                                    <div class="tasks__badge">Топ</div>
+                                </div>
                                 <a class="tasks__wrapper" href="#"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
-                                    <div class="tasks__link">Сдаётся дом, Метро Хамза</div>
-                                    <div class="tasks__price">
-                                        До <span>5 000 000</span> сум
-                                    </div>
+                                <div class="tasks__head tasks__head_badge">
+                                    <div class="tasks__link">Сдаётся дом, Метро Хамза <span>(Объявление)
+                                    </span></div>
+                                   
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
                                     <div class="tasks__info">
                                         <!-- TASK LIST -->
                                         <ul class="tasks__list">
-                                            <li class="tasks__li">Площадь пола: 16.5 м²</li>
-                                            <li class="tasks__li">Комнат: 3</li>
+                                            <li class="tasks__li">Площадь пола: 75.5 м².</li>
+                                            <li class="tasks__li">Комнат: 2.</li>
                                         </ul>
 
                                         <!-- TASK PLACE -->
@@ -317,40 +390,41 @@
                                                 <div class="tasks__bold">Начать:</div>
                                                 <div class="tasks__details">19 сент. пн, закончить: 21 сент. ср</div>
                                             </div>
-
-                                            <div class="tasks__place">
-                                                <img class="tasks__icon" src="images/distant.svg" alt="tasks icon">
-                                                <div class="tasks__bold">Дистанционно</div>
-                                            </div>
                                         </div>
 
                                     </div>
                                     <div class="tasks__slider">
-                                        <a class="tasks__photo" data-fancybox="gallery-2" href="images/gallery-4.png">
-                                            <img src="images/gallery-4.png" alt="tasks gallery">
-                                        </a>
-
-                                        <a class="tasks__photo" data-fancybox="gallery-2" href="images/gallery-3.png">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
                                             <img src="images/gallery-3.png" alt="tasks gallery">
                                         </a>
 
-                                        <a class="tasks__photo" data-fancybox="gallery-2" href="images/gallery-1.png">
-                                            <img src="images/gallery-1.png" alt="tasks gallery">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
                                         </a>
                                     </div>
                                 </div>
                                 <!-- TASK FOOT -->
-                                <div class="tasks__foot">
+                                <div class="tasks__foot tasks__foot_bots">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
-                                            <img class="tasks__avi" src="images/profile-photo-5.png" alt="tasks avi">
-                                            <div class="tasks__name">Дмитрий Артемьев</div>
+                                            <img class="tasks__avi" src="images/fw.svg" alt="tasks avi">
+                                            <div class="tasks__name">OOO FindWork</div>
                                         </a>
                                     </div>
-                                    <div class="tasks__time">
-                                        <img src="images/blue-dot.svg" alt="dot">
-                                        <span>18 минут назад</span>
+
+                                    <div class="tasks__right">
+                                        <div class="tasks__price">
+                                            <span>1 200 000 </span> - <span>1 500 000</span> сум
+                                        </div>
+                                            <div class="tasks__id">ID: <span>48107258</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +494,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-6.png" alt="tasks avi">
                                             <div class="tasks__name">Санжар Артемьев</div>
@@ -491,7 +565,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-5.png" alt="tasks avi">
                                             <div class="tasks__name">Дмитрий Артемьев</div>
@@ -511,6 +585,297 @@
                             </div>
 
 
+                        </div>
+
+                        <br><br>
+
+                        <div class="task-card">
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-1.png">
+                                            <img src="images/gallery-1.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge green">Премиум</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge green">Премиум</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+                            <div class="task-card__item">
+                                <a class="task-card__wrapper" href="#"></a>
+                                <div class="task-card__head">
+                                    <div class="tasks__badge">Топ</div>
+                                    <div class="tasks__slider">
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-4.png">
+                                            <img src="images/gallery-4.png" alt="tasks gallery">
+                                        </a>
+
+                                        <a class="tasks__photo" data-fancybox="gallery-house"
+                                            href="images/gallery-3.png">
+                                            <img src="images/gallery-3.png" alt="tasks gallery">
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="task-card__title">Сдаётся дом, Метро Хамза 
+                                    21 D lao</h3>
+                                <ul class="task-card__list">
+                                    <li class="task-card__li">Площадь пола: 16.5 м²</li>
+                                    <li class="task-card__li"> Комнат: 3</li>
+                                </ul>
+                                <div class="task-card__detail"><span>Фергана:</span> улица Тадбиркорлар 12 дом</div>
+                                <div class="task-card__price">1 200 000 - 1 500 000 сум</div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="tasks__bottom">
+                            <div class="tasks__amount">Просмотрено <span>30</span> из <span>435</span> аренд</div>
+                            <button class="btn btn_blue">Посмотреть еще</button>
                         </div>
                     </div>
                 </div>

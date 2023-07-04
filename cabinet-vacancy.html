@@ -265,7 +265,7 @@
                                     class="cabinet-menu__badge">0</span></a>
                             <a class="cabinet-menu__link active" href="cabinet-vacancy.html">Мои вакансии <span
                                     class="cabinet-menu__badge">14</span></a>
-                            <a class="cabinet-menu__link" href="cabinet-rent.html">Аренда | Продажа <span
+                            <a class="cabinet-menu__link" href="cabinet-rent.html">Объявления<span
                                     class="cabinet-menu__badge">99</span></a>
                         </nav>
 
@@ -832,10 +832,10 @@
                             </div>
 
                             <div class="cabinet__square">
-                                <h4 class="cabinet__minititle">Основная информация: </h4>
+                                <h4 class="cabinet__minititle">Основная информация:  </h4>
                                 <div class="cabinet__wrap">
                                     <input type="text" name="task-heading"
-                                        placeholder="Укажите название* Что нужно сделать ? " required>
+                                        placeholder="Название вакансии" required>
                                     <select name="category">
                                         <option selected disabled value="">Специализация</option>
                                         <option>Специализация #1</option>
@@ -919,6 +919,48 @@
                             </div>
 
                             <div class="cabinet__square">
+                                <h4 class="cabinet__minititle">Тип занятости:</h4>
+                                <div class="cabinet__radios cabinet__radios_row">
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="type-occupation">
+                                            Полная занятось
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="type-occupation">
+                                            Частичная занятось
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="type-occupation">
+                                            Проектная работа или разовое задание
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="type-occupation">
+                                            Волонтёрство
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="type-occupation">
+                                            Стажировка
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="cabinet__square">
                                 <h4 class="cabinet__minititle">Где будет работать сотрудник:</h4>
                                 <p class="cabinet__text">Укажите адрес, где будет работать будущий сотрудник.
                                     Или адрес основного офиса, если предполагается разъездная работа.</p>
@@ -972,7 +1014,52 @@
 
                                 </div>
 
-                                <input class="cabinet__addyear" type="text" placeholder="Ввести ручную">
+                                <div class="cabinet__whole">
+                                    <input class="cabinet__addyear" type="text" placeholder="Напишите свой вариант">
+                                </div>
+                            </div>
+
+                            <div class="cabinet__square">
+                                <h4 class="cabinet__minititle">График работы:</h4>
+                                <div class="cabinet__radios cabinet__radios_row">
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="graphs">
+                                            Полный день
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="graphs">
+                                            Сменный график
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="graphs">
+                                            Гибкий график
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="graphs">
+                                            Удаленная работа
+                                        </label>
+                                    </div>
+
+                                    <div class="cabinet__radio">
+                                        <label>
+                                            <input type="radio" name="graphs">
+                                            Вахтовый метод
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                       
                             </div>
 
                             <div class="cabinet__square">
@@ -988,6 +1075,46 @@
 Условия:" required>
 </textarea>
 
+                            </div>
+
+                            <div class="cabinet__square">
+                                
+                                <h4 class="cabinet__minititle">Ключевые навыки:</h4>
+                                <div class="cabinet__whole cabinet__adding">
+                                    <input type="text" placeholder="Напишите свой вариант">
+                                    <button class="btn btn_darkblue">Добавить</button>
+                                </div>
+
+                                <div class="cabinet__location">
+
+                                    <div class="cabinet__tag">
+                                        <span>HTML</span>
+                                        <div class="cabinet__trash">
+                                            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.973 3.71429H16.2917V0.928571C16.2917 0.682299 16.1907 0.446113 16.011 0.271972C15.8313 0.0978313 15.5875 0 15.3333 0H7.66667C7.4125 0 7.16875 0.0978313 6.98902 0.271972C6.8093 0.446113 6.70833 0.682299 6.70833 0.928571V3.71429H0.0269529L0 6.03571H1.97656L3.17987 24.2589C3.21033 24.7302 3.4249 25.1725 3.77994 25.4959C4.13498 25.8194 4.60384 25.9996 5.09115 26H17.9089C18.3959 25.9999 18.8646 25.8202 19.2199 25.4974C19.5751 25.1745 19.7901 24.7328 19.8213 24.2618L21.0234 6.03571H23L22.973 3.71429ZM6.70833 22.2857L6.16927 7.42857H8.14583L8.6849 22.2857H6.70833ZM12.4583 22.2857H10.5417V7.42857H12.4583V22.2857ZM13.8958 3.71429H9.10417V2.08929C9.10417 2.02772 9.12941 1.96867 9.17434 1.92514C9.21927 1.8816 9.28021 1.85714 9.34375 1.85714H13.6562C13.7198 1.85714 13.7807 1.8816 13.8257 1.92514C13.8706 1.96867 13.8958 2.02772 13.8958 2.08929V3.71429ZM16.2917 22.2857H14.3151L14.8542 7.42857H16.8307L16.2917 22.2857Z" fill="#686868"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="cabinet__tag">
+                                        <span>PHP</span>
+                                        <div class="cabinet__trash">
+                                            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.973 3.71429H16.2917V0.928571C16.2917 0.682299 16.1907 0.446113 16.011 0.271972C15.8313 0.0978313 15.5875 0 15.3333 0H7.66667C7.4125 0 7.16875 0.0978313 6.98902 0.271972C6.8093 0.446113 6.70833 0.682299 6.70833 0.928571V3.71429H0.0269529L0 6.03571H1.97656L3.17987 24.2589C3.21033 24.7302 3.4249 25.1725 3.77994 25.4959C4.13498 25.8194 4.60384 25.9996 5.09115 26H17.9089C18.3959 25.9999 18.8646 25.8202 19.2199 25.4974C19.5751 25.1745 19.7901 24.7328 19.8213 24.2618L21.0234 6.03571H23L22.973 3.71429ZM6.70833 22.2857L6.16927 7.42857H8.14583L8.6849 22.2857H6.70833ZM12.4583 22.2857H10.5417V7.42857H12.4583V22.2857ZM13.8958 3.71429H9.10417V2.08929C9.10417 2.02772 9.12941 1.96867 9.17434 1.92514C9.21927 1.8816 9.28021 1.85714 9.34375 1.85714H13.6562C13.7198 1.85714 13.7807 1.8816 13.8257 1.92514C13.8706 1.96867 13.8958 2.02772 13.8958 2.08929V3.71429ZM16.2917 22.2857H14.3151L14.8542 7.42857H16.8307L16.2917 22.2857Z" fill="#686868"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="cabinet__tag">
+                                        <span>JS</span>
+                                        <div class="cabinet__trash">
+                                            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.973 3.71429H16.2917V0.928571C16.2917 0.682299 16.1907 0.446113 16.011 0.271972C15.8313 0.0978313 15.5875 0 15.3333 0H7.66667C7.4125 0 7.16875 0.0978313 6.98902 0.271972C6.8093 0.446113 6.70833 0.682299 6.70833 0.928571V3.71429H0.0269529L0 6.03571H1.97656L3.17987 24.2589C3.21033 24.7302 3.4249 25.1725 3.77994 25.4959C4.13498 25.8194 4.60384 25.9996 5.09115 26H17.9089C18.3959 25.9999 18.8646 25.8202 19.2199 25.4974C19.5751 25.1745 19.7901 24.7328 19.8213 24.2618L21.0234 6.03571H23L22.973 3.71429ZM6.70833 22.2857L6.16927 7.42857H8.14583L8.6849 22.2857H6.70833ZM12.4583 22.2857H10.5417V7.42857H12.4583V22.2857ZM13.8958 3.71429H9.10417V2.08929C9.10417 2.02772 9.12941 1.96867 9.17434 1.92514C9.21927 1.8816 9.28021 1.85714 9.34375 1.85714H13.6562C13.7198 1.85714 13.7807 1.8816 13.8257 1.92514C13.8706 1.96867 13.8958 2.02772 13.8958 2.08929V3.71429ZM16.2917 22.2857H14.3151L14.8542 7.42857H16.8307L16.2917 22.2857Z" fill="#686868"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div

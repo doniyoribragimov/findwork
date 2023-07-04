@@ -157,15 +157,6 @@ $lightPink: #FADEFF;
   background-position: right 10px center !important;
   background-size: 13px !important;
   outline: none;
-
-  option {
-    color: #000;
-
-    &:first-child {
-      color: #737373;
-    }
-  }
-
   &:focus {
     background-image: url('../images/arrow-up.svg') !important;
   }
@@ -244,6 +235,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .fancybox__button--fullscreen,
 .fancybox__button--thumbs {
   display: none !important;
+}
+
+select{
+  -moz-appearance: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: url('../images/arrow-downs.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: right 10px center !important;
+  background-size: 13px !important;
+  outline: none;
+  &:focus {
+    background-image: url('../images/arrow-up.svg') !important;
+  }
 }
 
 
@@ -480,7 +485,11 @@ input[type='checkbox'] {
   width: fit-content;
   @extend %normalHover;
   cursor: pointer;
-
+  img{
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+  }
   &_blue {
     background-color: $blue;
     color: #fff;
@@ -488,6 +497,7 @@ input[type='checkbox'] {
 
     &:hover {
       opacity: 1;
+      border: 2px solid $darkBlue;
       background-color: $darkBlue;
     }
 
@@ -657,6 +667,9 @@ input[type='checkbox'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &_top{
+    align-items: flex-start;
+  }
 }
 
 .tabs {
@@ -751,6 +764,41 @@ input[type='checkbox'] {
   gap: 23px;
   margin-bottom: 25px;
   height: 60px;
+  &__bots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .searchbar__result{
+      margin-bottom: 0;
+    }
+  }
+
+  &__rights{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    .searchbar__content{
+      height: 100%;
+    }
+  }
+
+  &__select{
+    padding: 9px 12px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 15px 0px rgba(9, 24, 78, 0.10);
+    border: none;
+    padding-right: 100px;
+  }
 
   &__content {
     flex: 1;
@@ -879,6 +927,28 @@ input[type='checkbox'] {
 
 
 
+}
+
+.searchbar-view{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0px 1px 15px 0px rgba(9, 24, 78, 0.10);
+  &__item{
+    padding: 10px 15px;
+    @extend %normalHover;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    &.active{
+      background-color: $blue;
+      img{
+        filter: brightness(2000%)
+      }
+    }
+  }
 }
 
 .searchbar-filter,

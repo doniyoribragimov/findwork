@@ -407,7 +407,7 @@
             .process__video{
                 position: absolute;
                 top: 34%;
-                left: -40px;
+                left: 0;
                 z-index: 2;
             }
         }
@@ -885,6 +885,23 @@
         }
     }
 
+    .starter{
+        &__rights{
+            .process__video{
+                position: absolute;
+                top: 34%;
+                left: -10%;
+                z-index: 2;
+            }
+        }
+    }
+
+    .tarif{
+        &__inner{
+            gap: 25px;
+        }
+    }
+
 
 
     .freelancers {
@@ -943,6 +960,20 @@
         }
 
         &__inner{
+            gap: 16px;
+        }
+    }
+
+    .duty{
+        &__texts{
+            width: 100%;    
+        }
+    }
+
+    .searchbar{
+        &__bots{
+            flex-direction: column;
+            align-items: flex-start;
             gap: 16px;
         }
     }
@@ -2180,12 +2211,55 @@
             }
         }
 
+        &__info{
+            padding-top: 0;
+        }
+
         &__bottom{
             gap: 16px;
             .process__video{
                 display: flex;
             }
         }
+    }
+
+
+    .tarif{
+        &__content{
+            padding: 16px 20px;
+        }
+
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    .tarif-notion{
+        &__name{
+            font-size: 14px;
+        }
+    }
+
+    .tasks{
+        &__selecteds{
+            display: block;
+        }
+    }
+
+    .tarif-select{
+        &__item{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__right{
+            justify-content: space-between;
+        }
+    }
+
+    .details{
+        margin-top: 50px;
     }
 
 }
@@ -2825,6 +2899,8 @@
         }
     }
 
+  
+
     .duty-chats {
         .details-chat {
 
@@ -2978,6 +3054,12 @@
             gap: 36px 16px;
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+
+    
+    .tarif-notion{
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
 
@@ -3169,6 +3251,16 @@
             width: 100%;
         }
 
+        &__mores {
+            flex-direction: column;
+
+            .details-flags__slider {
+                width: 260px;
+            }
+
+
+        }
+
         &__panels{
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
@@ -3264,6 +3356,24 @@
         grid-template-columns: 1fr;
     }
 
+    .tarif{
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+
+        &__detail{
+            min-height: auto;
+        }
+    }
+
+
+    .task-card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        &__item{
+            padding: 10px 10px 16px;
+        }
+    }
 }
 
 
@@ -3997,19 +4107,7 @@
             }
         }
 
-        &__slider {
-            height: 200px;
-            width: 400px;
-
-            .slick-slide {
-                img {
-                    object-fit: cover;
-                    height: 200px;
-                    width: 100%;
-                    border-radius: 10px;
-                }
-            }
-        }
+   
     }
 
     .tasks-map {
@@ -4170,6 +4268,8 @@
             gap: 12px;
         }
 
+   
+
         &__minititle {
             font-size: 18px;
             margin-bottom: 16px;
@@ -4251,6 +4351,12 @@
             padding: 12px 20px;
             font-size: 14px;
         }
+
+        &__adding{
+            input{
+                padding-right: 150px!important;
+            }
+        }
     }
 
     .cabinet-status {
@@ -4303,13 +4409,7 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        &__mores {
-            flex-direction: column;
-
-            .details-flags__slider {
-                width: 260px;
-            }
-        }
+       
     }
 
 
@@ -4846,6 +4946,78 @@
         }
     }
 
+    .tarif{
+        &__title{
+            font-size: 22px;
+        }
+    }
+
+    .tarif-notion{
+        &__content{
+            grid-template-columns: 1fr;
+        }
+
+        &__name{
+            text-align: center;
+        }
+
+        &__create{
+            font-size: 16px;
+            padding: 12px 16px;
+        }
+    }
+    
+    .tarif-select{
+        &__right{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .tarif-overall{
+        padding: 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        span{
+            font-size: 18px;
+        }
+    }
+
+
+    .tasks{
+        &__head_badge{
+            padding-right: 0;
+            padding-top: 30px;
+        }
+
+        &__badges{
+            left: 30px;
+            right: unset;
+        }
+
+        &__foot_bots{
+            flex-direction: column-reverse!important;
+            align-items: flex-start;
+        }
+
+        &__right{
+            align-self: flex-end;
+        }
+
+        &__price{
+            color: $blue;
+            span{
+                font-size: 20px;
+            }
+        }
+
+        &__right{
+            align-items: flex-start; 
+            align-self: flex-start;
+            margin-bottom: 12px;
+        }
+    }
+
 }
 
 
@@ -5137,6 +5309,11 @@
             gap: 10px;
         }
 
+        &__badge{
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+
         &__time {
             font-size: 14px;
         }
@@ -5154,15 +5331,10 @@
             gap: 16px;
         }
 
-        &__link {
-            font-size: 24px;
+        &__link{
+            font-size: 18px;
         }
 
-        &__slider{
-            .slick-slide img {
-                width: 90%;
-            }
-        }
     }
 
     .tasks-become {
@@ -5483,7 +5655,6 @@
     // ------------------------------------------
     .details-content {
         &__bottoms {
-            grid-template-columns: 1fr;
             gap: 10px;
 
             .suggest__phone {
@@ -6007,6 +6178,117 @@
         }
     }
 
+    .tarif{
+        padding: 16px;
+        &__head{
+            flex-direction: column-reverse;
+            gap: 12px;
+        }
+
+        &__btn{
+            font-size: 14px;
+        }
+
+        &__btns{
+            gap: 10px;
+            .btn{
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+        }
+
+        &__li{
+            padding-left: 20px;
+            &::after{
+                top: 3px;
+                transform: unset;
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+        &__img{
+            height: 100px;
+        }
+
+        &__detail{
+            font-size: 14px;
+        }
+
+        &__price{
+            font-size: 25px;
+        }
+
+        &__list,
+        &__date{
+            font-size: 14px;
+        }
+    }
+
+
+    .tarif-select{
+        &__item{
+            padding: 16px;
+        }
+
+        &__price{
+            font-size: 18px;
+        }
+
+        &__right{
+            gap: 12px;
+        }
+
+        &__name{
+            font-size: 16px;
+        }
+    }
+
+
+    .tarif-overall{
+        &__name{
+            flex-wrap: wrap;
+        }
+    }
+
+    .searchbar{
+        height: fit-content;
+        &_three{
+            display: grid!important;
+            grid-template-columns: auto 1fr!important;
+            grid-template-rows: repeat(2, 50px);
+            .searchbar__content{
+                grid-column-start: span 2;
+                order: -1;
+            }
+
+            .filters__btn{
+                width: 100%!important;
+                height: 100%!important;
+                padding: 5px 10px;
+            }
+        }
+
+        &-view{
+            width: fit-content;
+        }
+
+        &__rights{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+     
+    }
+
+    .task-card{
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+   
+    }
+
 
 }
 
@@ -6014,7 +6296,10 @@
 
     // --------------------------------------------
     .details {
-        grid-template-columns: 1fr;
+        gap: 10px;
+        &__name{
+            font-size: 16px;
+        }
     }
 
     // ------------------------------------------
@@ -6031,6 +6316,11 @@
         &__inner {
             gap: 5px;
         }
+    }
+
+    .task-card{
+        width: 100%;
+        margin: unset;
     }
 
     .header-languages.active .header-languages__current {
@@ -6112,11 +6402,12 @@
             gap: 10px;
             width: 100%;
             font-size: 14px;
-
         }
     }
 
+
     // ------------------------------------------
+
 
     .tasks {
         &__foot {
@@ -6153,7 +6444,7 @@
         }
 
         &__amount {
-            font-size: 18px;
+            font-size: 16px;
             text-align: center;
         }
 
@@ -6835,19 +7126,6 @@
 
 
     // ------------------------------------------
-    .tasks {
-        &__slider {
-            height: 180px;
-            width: 260px;
-
-            .slick-slide {
-                img {
-                    height: 180px;
-                    width: 90%;
-                }
-            }
-        }
-    }
 
 
     .tasks-map {
@@ -7044,6 +7322,12 @@
         &__tab {
             height: 100%;
         }
+
+        &__adding{
+            input{
+                padding-right: 130px!important;
+            }
+        }
     }
 
     .duty-tarif {
@@ -7137,6 +7421,11 @@
 
     }
 
+    .client__wrap input, .client__wrap select {
+        height: 45px;
+        font-size: 14px;
+    }
+
     .client-tarif {
         &__num {
             height: 80px;
@@ -7149,6 +7438,12 @@
 
         &__detail {
             flex-direction: column;
+            font-size: 14px;
+        }
+
+        &__free{
+            font-size: 16px;
+
         }
 
         &__info {
@@ -7156,9 +7451,8 @@
         }
 
         &__pers {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
 
@@ -7219,6 +7513,70 @@
         }
     }
 
+    .tarif{
+        gap: 20px;
+        &__title{
+            font-size: 18px;
+        }
+
+        &__text{
+            font-size: 14px;
+        }
+
+        &__halfs{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__lists{
+            font-size: 14px;
+        }
+
+    }
+
+
+    .heading{
+        font-size: 20px;
+        &.mb{
+            margin-bottom: 20px;
+        }
+    }
+
+    .tarif{
+        &__days{
+            font-size: 50px;
+        }
+    }
+
+    .suggest__buttons{
+
+        .btn{
+            font-size: 14px;
+            padding: 8px;
+            height: auto;
+        }
+    }
+
+    .splitter:has(.duty__tops) .duty__title {
+        padding-right: 0;
+        padding-top: 20px;
+    }
+
+    .btn{
+        padding: 10px;
+    }
+
+    .details-content__top,
+    .details-content__bottoms{
+        .btn{
+            padding: 10px;
+        }
+    }
+
+    .freelancer-page .tasks__slider{
+        width: 240px;
+        margin: auto;
+    }
 }
 
 @media (max-width: 380px) {
@@ -7237,11 +7595,52 @@
         }
     }
 
+    .header-nav__alert.active .header-nav__message {
+        position: fixed;
+        top: 55px;
+        width: 95%;
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+
+    .freelancer{
+        &__bold{
+            font-size: 14px;
+        }
+    }
+
+    .details-content__bottoms {
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+        .btn{
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    .details-content{
+        &__minutes{
+            gap: 3px;
+            font-size: 12px;
+            img{
+                height: 13px;
+                width: 13px;
+            }
+        }
+    }
+
+    
+
     // ------------------------------------------
     .duty {
         &__skills {
             grid-template-columns: 1fr;
         }
+    }
+
+    .tasks__slider{
+        width: 100%;
     }
 
 

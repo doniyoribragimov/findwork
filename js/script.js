@@ -155,6 +155,14 @@ $(function () {
         $(this).find('input').attr('checked', 'checked')
     })
 
+    $('.step-accordion__body .btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('outline')
+        $(this).find('input').attr('checked', 'checked')
+        
+    })
+
+
 
 
 
@@ -429,6 +437,16 @@ $(function () {
         $(this).siblings('input').val('')
     })
 
+
+    $('.tarif__btn').on('click', function () {
+        $('.tarif__card').removeClass('active')
+        $('.tarif-notion').removeClass('active')
+        
+        $(this).parents('.tarif__card').addClass('active')
+        $(this).parents('.tarif-notion').addClass('active')
+        $(this).parents('.tarif-notion').find('input').click()
+        $(this).parents('.tarif__card').find('input').click()
+    })
 
     //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -746,7 +764,7 @@ function createAccordion(target, content, singleOn, startFrom) {
 }
 
 createAccordion('.question__head', '.question__mains', false)
-createAccordion('.step-accordion__head', '.step-accordion__body', true, 2)
+createAccordion('.step-accordion__head', '.step-accordion__body', false)
 createAccordion('.modal-profile__show', '.modal-profile__accordion', false)
 createAccordion('.info__trigger', '.info__location', false)
 
@@ -852,7 +870,6 @@ for (let mores of reviewsMores) {
 
 
 
-
 function activeToggler(items) {
     items = document.querySelectorAll(items)
     for (let item of items) {
@@ -866,29 +883,54 @@ activeToggler('.modal-profile__rates .rate-btn')
 
 // MODAL CREATE FUNCTION
 
-function createModal(modalName, modalClose, modalTrigger) {
-    modalName = document.querySelector(modalName)
-    modalClose = document.querySelector(modalClose)
-    modalTrigger = document.querySelector(modalTrigger)
-
-    if (modalTrigger) {
-        modalTrigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            modalName.classList.add('active')
-            body.style.overflowY = 'hidden'
-        })
-
-        if (modalClose) {
-            modalClose.addEventListener('click', function () {
-                modalName.classList.remove('active')
-                body.style.overflowY = 'initial'
-            })
+function createModal(modalName, modalClose, modalTrigger, isMultiple = false) {
+    if(isMultiple){
+        modalName = document.querySelector(modalName)
+        modalClose = document.querySelector(modalClose)
+        modalTrigger = document.querySelectorAll(modalTrigger)
+    
+        if (modalTrigger) {
+            for(let trigger of modalTrigger){
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    modalName.classList.add('active')
+                    body.style.overflowY = 'hidden'
+                })
+            }
+    
+            if (modalClose) {
+                modalClose.addEventListener('click', function () {
+                    modalName.classList.remove('active')
+                    body.style.overflowY = 'initial'
+                })
+            }
+    
         }
-
+    } else{
+        modalName = document.querySelector(modalName)
+        modalClose = document.querySelector(modalClose)
+        modalTrigger = document.querySelector(modalTrigger)
+    
+        if (modalTrigger) {
+            modalTrigger.addEventListener('click', function (e) {
+                e.preventDefault();
+                modalName.classList.add('active')
+                body.style.overflowY = 'hidden'
+            })
+    
+            if (modalClose) {
+                modalClose.addEventListener('click', function () {
+                    modalName.classList.remove('active')
+                    body.style.overflowY = 'initial'
+                })
+            }
+    
+        }
     }
 
 
 }
+createModal('.process__modal', '.process__close', '.process__video', true)
 
 createModal('#modalLogin', '#modalLogin .modal-profile__close', '#trigger-login')
 createModal('#modalLogin', '#modalLogin .modal-profile__cancel', '#trigger-login')
@@ -908,7 +950,6 @@ createModal('.modal-chat', '.modal-chat__back', '.details-sidebar__user')
 createModal('.modal-chat', '.modal-chat__back', '.chat-people__item')
 createModal('.modal-details', '.modal-details__close', '.modal-chat__detail')
 createModal('.modal-map', '.modal-map .btn', '.details-content__geo')
-createModal('.process__modal', '.process__close', '.process__video')
 createModal('.modal-auth', '.modal__close', '.sign-up')
 createModal('.modal-auth', '.modal__close', '.sign-in')
 createModal('.modal-code', '.modal__close')
