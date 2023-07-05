@@ -159,11 +159,11 @@ $(function () {
         e.preventDefault();
         $(this).toggleClass('outline')
         $(this).find('input').attr('checked', 'checked')
-        
     })
 
-
-
+    $('.filter-select__trigger').on('click', function () {
+        $(this).parent('.filter-select').toggleClass('active')
+    })
 
 
     $('.cabinet__seltype').on('click', function () {
@@ -173,6 +173,7 @@ $(function () {
         $(this).addClass('active')
         $(this).find('input').attr('checked', 'checked')
     })
+
 
     // PASSWORD CHECK UP
 

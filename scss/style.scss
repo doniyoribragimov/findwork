@@ -2514,6 +2514,9 @@
     &__title {
         font-weight: 600;
         font-size: 20px;
+        &_mini{
+            font-size: 16px;
+        }
     }
 
     &__list {
@@ -2574,9 +2577,16 @@
         padding-bottom: 20px;
     }
 
+    &__region{
+        .filter__title{
+            font-size: 16px;
+        }
+    }
+
     &__item {
         padding: 10px 0;
         display: flex;
+        width: fit-content;
         gap: 7px;
         align-items: center;
         cursor: pointer;
@@ -2599,6 +2609,9 @@
         height: 40px;
         padding: 0 12px;
         @extend %selectArrow;
+        &.mb{
+            margin: 10px 0 24px;
+        }
     }
 
     &__btn {
@@ -2722,8 +2735,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        align-self: flex-end;
         gap: 5px;
-    
     }
 
     &__badges{
@@ -2733,6 +2746,15 @@
         right: 35px;
         display: flex;
         gap: 12px;
+    }
+
+    &__remote{
+        padding: 6px 12px;
+        border-radius: 4px;
+        background: #F7F7FF;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+        width: fit-content;
+        margin: 16px 0 10px;
     }
 
     &__id{
@@ -2824,7 +2846,6 @@
     &__head {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
         position: relative;
         &_badge{
             padding-right: 250px;
@@ -2843,7 +2864,8 @@
 
     &__price {
         font-size: 16px;
-
+        margin: 8px 0 12px;
+        color: $darkBlue;
         span {
             font-size: 22px;
             font-weight: 700;
@@ -2858,6 +2880,7 @@
 
     &__slider {
         width: 200px;
+        height: 100%;
         position: relative;
         .slick-dots {
             display: flex;
@@ -9603,18 +9626,32 @@
     inset: 0;
     background-color: rgba(#000, 0.2);
     z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @extend %hideShow;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        .filter-modal{
+            &__inner{
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
     &__inner {
         border-radius: 10px;
         background-color: #fff;
-        max-height: 90%;
         padding: 16px;
         overflow-y: auto;
-
+        height: 100%;
+        width: 350px;
+        max-width: 100%;
+        transition: all 0.3s linear;
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
         &::-webkit-scrollbar {
             display: none;
         }
@@ -9624,6 +9661,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 20px;
+        span{
+            font-size: 20px;
+        }
     }
 
     &__close {
@@ -10805,10 +10846,6 @@
 
 .tasks_vacancy {
     .tasks{
-        &__link{
-            color: $darkBlue
-        }
-
         &__price{
             margin: 10px 0;
         }
@@ -10816,6 +10853,61 @@
     }
     .btn{
         padding: 10px 16px;
+    }
+}
+
+.filter-select{
+    margin-bottom: 20px;
+    font-size: 14px;
+    &.active{
+        .filter-select{
+            &__trigger{
+                border-radius: 10px 10px 0 0;
+                background-color: #f8f8f8;
+            }
+
+            &__arrow{
+                transform: rotate(180deg);
+            }
+
+            &__list{
+                display: grid;
+            }
+        }
+    }
+    &__trigger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #E0E0E0;
+        background: #FFF;
+        padding: 12px 14px;
+        gap: 10px;
+        font-weight: 600;
+        transition: background-color 0.2s;
+        @extend %selectionHide;
+        cursor: pointer;
+    }
+
+    &__name{
+        cursor: pointer;
+    }
+
+    &__arrow{
+        transition: all 0.2s linear;
+        height: 7px;
+    }
+
+    &__list{
+        display: none;
+        gap: 20px;
+        padding: 15px 10px;
+        border-right: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        border-left: 1px solid #E0E0E0;
+        background: #FFF;
+        border-radius: 0 0 10px 10px;
     }
 }
 

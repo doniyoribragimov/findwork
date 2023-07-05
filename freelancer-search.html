@@ -90,142 +90,164 @@
 
                 </div>
                 <div class="divider divider_reverse">
-                    <aside class="aside filter aside_none">
-                        <div class="filter__head">
-                            <h2 class="filter__title">Фильтр</h2>
-                            <div class="filter__collapse">Свернуть</div>
-                        </div>
-                        <div class="filter__content">
-                            <h2 class="filter__title">Категории услуг:</h2>
-                            <ul class="filter__list">
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт и строительство
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Курьерские услуги
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Грузоперевозки
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Уборка и помощь по хозяйству
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Виртуальный помощник
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Компьютерная помощь
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Мероприятия и промо акции
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Дизайн
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Разработка ПО
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Фото видео и аудио
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Установка и ремонт техники
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Красота и здоровье
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт цифровой техники
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Юридическая и бухгалтерская помощь
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Репетиторы и обучение
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт транспорта
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="filter__region">
-                            <h2 class="filter__title">Город / Регион:</h2>
-                            <select class="filter__select" name="region">
-                                <option selected disabled>Вся страна</option>
-                                <option>Фергана</option>
-                                <option>Андижан</option>
-                                <option>Самарканд</option>
-                            </select>
-                        </div>
-                        <a class="filter__btn btn btn_red" href="#">
-                            <div class="filter__show">Показать</div>
-                            <div class="filter__count">
-                                <span>1255</span> заданий
+                    <aside class="aside filter filter__nobg aside_none">
+                        <div class="filter-selected">
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Правила:</span> Можно с детьми </div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
                             </div>
-                        </a>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Удобства:</span> Микроволновая печь</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Доп.Преимущества:</span> Бассейн</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__all">Сбросить фильтр</div>
+                        </div>
+
+                        <div class="filter__all">
+                            <div class="filter__head">
+                                <h2 class="filter__title">Фильтр</h2>
+                                <div class="filter__collapse">Свернуть</div>
+                            </div>
+                            <div class="filter__region filter__region_mb">
+                                <h2 class="filter__title">Город / Регион:</h2>
+                                <select class="filter__select" name="region">
+                                    <option selected disabled>Вся страна</option>
+                                    <option>Фергана</option>
+                                    <option>Андижан</option>
+                                    <option>Самарканд</option>
+                                </select>
+                            </div>
+                            <div class="filter__content">
+                                <h2 class="filter__title">Категории услуг:</h2>
+                                <ul class="filter__list">
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт и строительство
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Курьерские услуги
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Грузоперевозки
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Уборка и помощь по хозяйству
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Виртуальный помощник
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Компьютерная помощь
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Мероприятия и промо акции
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Дизайн
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Разработка ПО
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Фото видео и аудио
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Установка и ремонт техники
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Красота и здоровье
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт цифровой техники
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Юридическая и бухгалтерская помощь
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Репетиторы и обучение
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт транспорта
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                     
+                            <a class="filter__btn btn btn_red" href="#">
+                                <div class="filter__show">Показать</div>
+                                <div class="filter__count">
+                                    <span>1255</span> заданий
+                                </div>
+                            </a>    
+                        </div>
                     </aside>
 
 
@@ -393,9 +415,9 @@
                                     </div>
 
                                 </div>
-                                <div class="freelancer-service__all">
+                                <a class="freelancer-service__all" href="#">
                                     Все специализации
-                                </div>
+                                </a>
                                 <div class="freelancer__bottom">
                                     <a class="btn btn_blue" href="#">Посмотреть контакты специалиста</a>
                                     <a class="btn btn_red" href="#">Предложить задание</a>
@@ -549,9 +571,9 @@
                                     </div>
 
                                 </div>
-                                <div class="freelancer-service__all">
+                                <a class="freelancer-service__all" href="#">
                                     Все специализации
-                                </div>
+                                </a>
                                 <div class="freelancer__bottom">
                                     <a class="btn btn_blue" href="#">Посмотреть контакты специалиста</a>
                                     <a class="btn btn_red" href="#">Предложить задание</a>
@@ -719,6 +741,17 @@
                 <h2 class="filter__title filter-modal__head"><span>Категории услуг:</span>
                     <div class="filter-modal__close">&times;</div>
                 </h2>
+
+                <div class="filter__region filter__region_mb">
+                    <h2 class="filter__title">Город / Регион:</h2>
+                    <select class="filter__select" name="region">
+                        <option selected disabled>Вся страна</option>
+                        <option>Фергана</option>
+                        <option>Андижан</option>
+                        <option>Самарканд</option>
+                    </select>
+                </div>
+
                 <ul class="filter__list">
                     <li class="filter__li">
                         <label class="filter__item">
@@ -833,15 +866,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="filter__region">
-                <h2 class="filter__title">Город / Регион:</h2>
-                <select class="filter__select" name="region">
-                    <option selected disabled>Вся страна</option>
-                    <option>Фергана</option>
-                    <option>Андижан</option>
-                    <option>Самарканд</option>
-                </select>
-            </div>
+        
             <a class="filter__btn btn btn_red" href="#">
                 <div class="filter__show">Показать</div>
                 <div class="filter__count">

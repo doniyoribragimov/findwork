@@ -90,143 +90,215 @@
 
                 </div>
                 <div class="divider divider_reverse">
-                    <aside class="aside filter aside_none">
-                        <div class="filter__head">
-                            <h2 class="filter__title">Фильтр</h2>
-                            <div class="filter__collapse">Свернуть</div>
-                        </div>
-                        <div class="filter__content">
-                            <h2 class="filter__title">Категории услуг:</h2>
-                            <ul class="filter__list">
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт и строительство
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Курьерские услуги
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Грузоперевозки
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Уборка и помощь по хозяйству
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Виртуальный помощник
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Компьютерная помощь
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Мероприятия и промо акции
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Дизайн
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Разработка ПО
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Фото видео и аудио
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Установка и ремонт техники
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Красота и здоровье
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт цифровой техники
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Юридическая и бухгалтерская помощь
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Репетиторы и обучение
-                                    </label>
-                                </li>
-
-                                <li class="filter__li">
-                                    <label class="filter__item">
-                                        <input type="checkbox" name="filter">
-                                        Ремонт транспорта
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="filter__region">
-                            <h2 class="filter__title">Город / Регион:</h2>
-                            <select class="filter__select" name="region">
-                                <option selected disabled>Вся страна</option>
-                                <option>Фергана</option>
-                                <option>Андижан</option>
-                                <option>Самарканд</option>
-                            </select>
-                        </div>
-                        <a class="filter__btn btn btn_red" href="#">
-                            <div class="filter__show">Показать</div>
-                            <div class="filter__count">
-                                <span>1255</span> заданий
+                    <aside class="aside filter filter__nobg aside_none">
+                        <div class="filter-selected">
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Правила:</span> Можно с детьми </div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
                             </div>
-                        </a>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Удобства:</span> Микроволновая печь</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__item">
+                                <div class="filter-selected__name"><span>Доп.Преимущества:</span> Бассейн</div>
+                                <img class="filter-selected__close" src="images/x-grey.svg" alt="x icon">
+                            </div>
+
+                            <div class="filter-selected__all">Сбросить фильтр</div>
+                        </div>
+
+                        <div class="filter__all">
+                            <div class="filter__head">
+                                <h2 class="filter__title">Фильтр</h2>
+                                <div class="filter__collapse">Свернуть</div>
+                            </div>
+                            
+                            <div class="filter__region filter__region_mb">
+                                <h2 class="filter__title">Город / Регион:</h2>
+                                <select class="filter__select" name="region">
+                                    <option selected="" disabled="">Вся страна</option>
+                                    <option>Фергана</option>
+                                    <option>Андижан</option>
+                                    <option>Самарканд</option>
+                                </select>
+                            </div>
+    
+                            <div class="filter__content">
+                                <h2 class="filter__title">Категории услуг:</h2>
+                                <ul class="filter__list">
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт и строительство
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Курьерские услуги
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Грузоперевозки
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Уборка и помощь по хозяйству
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Виртуальный помощник
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Компьютерная помощь
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Мероприятия и промо акции
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Дизайн
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Разработка ПО
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Фото видео и аудио
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Установка и ремонт техники
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Красота и здоровье
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт цифровой техники
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Юридическая и бухгалтерская помощь
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Репетиторы и обучение
+                                        </label>
+                                    </li>
+    
+                                    <li class="filter__li">
+                                        <label class="filter__item">
+                                            <input type="checkbox" name="filter">
+                                            Ремонт транспорта
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="filter__box mb">
+                                <h2 class="filter__title filter__title_mini">Цена:  </h2>
+                                <div class="filter__wrap">
+                                    <input type="number" name="from" placeholder="от" autocomplete="off">
+                                    <input type="number" name="to" placeholder="до" autocomplete="off">
+                                </div>
+                            </div>
+    
+                            <div class="filter-select">
+                                <div class="filter-select__trigger">
+                                    <div class="filter-select__name">Место встречи:</div>
+                                    <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                                </div>
+    
+                                <ul class="filter-select__list">
+                                    <li>
+                                        <label class="filter-select__label">
+                                            <input type="checkbox" name="filter checks" autocomplete="off">
+                                            У специалиста
+                                        </label>
+                                    </li>
+    
+                                    <li>
+                                        <label class="filter-select__label">
+                                            <input type="checkbox" name="filter checks" autocomplete="off">
+                                            У клиента
+                                        </label>
+                                    </li>
+    
+                                    <li>
+                                        <label class="filter-select__label">
+                                            <input type="checkbox" name="filter checks" autocomplete="off">
+                                            Дистанционно
+                                        </label>
+                                    </li>
+    
+                                    <li>
+                                        <label class="filter-select__label">
+                                            <input type="checkbox" name="filter checks" autocomplete="off">
+                                            Можно проводить праздники
+                                        </label>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                            
+                            <a class="filter__btn btn btn_red" href="#">
+                                <div class="filter__show">Показать</div>
+                                <div class="filter__count">
+                                    <span>1255</span> заданий
+                                </div>
+                            </a>
+                        </div>
                     </aside>
+
+
                     <div class="tasks">
                         <div class="searchbar">
                             <div class="filters__btn">
@@ -247,33 +319,47 @@
                             </div>
                         </div>
 
-                        <h2 class="searchbar__result">
-                            Найдено заданий в данной категории: <span>10 066</span>
-                        </h2>
+                        <div class="searchbar__bots">
+                            <h2 class="searchbar__result">
+                                Найдено заданий в данной категории: <span>10 066</span>
+                            </h2>
+
+                            <div class="searchbar__rights">
+                                Сортировать по: 
+                                <select class="searchbar__select" name="filter">
+                                    <option>Дате публикации</option>
+                                    <option>По дешевле</option>
+                                    <option>Топ объявления</option>
+                                    <option>Новые</option>
+                                    <option>Рекомендуемые</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="tasks__content">
                             <div class="tasks__item">
                                 <a class="tasks__wrapper" href="#"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
+                                <div class="tasks__head_badge">
                                     <a class="tasks__link" href="#">Укладка плитки на пол</a>
-                                    <div class="tasks__price">
-                                        <span>50 000</span> - <span>70 000</span> сум
+                                    <div class="tasks__badges">
+                                        <div class="tasks__badge green">PREMIUM</div>
+                                        <div class="tasks__badge">топ</div>
                                     </div>
+                                </div>
+                              
+                                <div class="tasks__price">
+                                    <span>50 000</span> - <span>70 000</span> сум
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
                                     <div class="tasks__info">
                                         <!-- TASK LIST -->
                                         <ul class="tasks__list">
-                                            <li class="tasks__li">Площадь поверхности: 10 м²</li>
-                                            <li class="tasks__li">Положить плитку, обработать межплиточные швы,
-                                                подрезать плитку.</li>
-                                            <li class="tasks__li">Пол.</li>
-                                            <li class="tasks__li">Поверхность для укладки: бетон.</li>
-                                            <li class="tasks__li">Плитка: керамогранит.</li>
-                                            <li class="tasks__li">Общая площадь ,большая, но мне необходимо ,пока
-                                                положить плитку в бойлерной.</li>
+                                            <li class="tasks__li">Без подгона по рисунку.</li>
+                                            <li class="tasks__li">Площадь пола: 16.5 м².</li>
+                                            <li class="tasks__li">Высота потолка: 270 м.</li>
+                                            <li class="tasks__li">Обои в наличии.</li>
                                         </ul>
 
                                         <!-- TASK PLACE -->
@@ -311,7 +397,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-2.png" alt="tasks avi">
                                             <div class="tasks__name">Азизбек Иброгимов</div>
@@ -327,11 +413,15 @@
                             <div class="tasks__item">
                                 <a class="tasks__wrapper" href="#"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
+                                <div class="tasks__head_badge">
                                     <a class="tasks__link" href="#">Логопеды</a>
-                                    <div class="tasks__price">
-                                        До <span>50 000</span> сум
+                                    <div class="tasks__badges">
+                                        <div class="tasks__badge green">PREMIUM</div>
                                     </div>
+                                </div>
+                             
+                                <div class="tasks__price">
+                                    До <span>50 000</span> сум
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
@@ -383,7 +473,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-2.png" alt="tasks avi">
                                             <div class="tasks__name">Азизбек Иброгимов</div>
@@ -408,11 +498,16 @@
                             <div class="tasks__item">
                                 <a class="tasks__wrapper" href="#"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
-                                    <a class="tasks__link" href="#">Домработницы со стажем с проживанием </a>
-                                    <div class="tasks__price">
-                                        До <span>3 000 000 сум</span> / мес
+                          
+                                <div class="tasks__head_badge">
+                                    <a class="tasks__link" href="#">Домработницы со стажем с проживанием</a>
+                                    <div class="tasks__badges">
+                                        <div class="tasks__badge green">PREMIUM</div>
                                     </div>
+                                </div>
+
+                                <div class="tasks__price">
+                                    До <span>3 000 000 сум</span> / мес
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
@@ -452,7 +547,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-2.png" alt="tasks avi">
                                             <div class="tasks__name">Азизбек Иброгимов</div>
@@ -468,11 +563,15 @@
                             <div class="tasks__item">
                                 <a class="tasks__wrapper" href="https://www.google.com/"></a>
                                 <!-- TASK HEAD -->
-                                <div class="tasks__head">
+                            
+                                <div class="tasks__head_badge">
                                     <a class="tasks__link" href="#">Домработницы со стажем с проживанием </a>
-                                    <div class="tasks__price">
-                                        цена: <span> договорная</span>
+                                    <div class="tasks__badges">
+                                        <div class="tasks__badge green">PREMIUM</div>
                                     </div>
+                                </div>
+                                <div class="tasks__price">
+                                    цена: <span> договорная</span>
                                 </div>
                                 <!-- TASK BODY -->
                                 <div class="tasks__body">
@@ -512,7 +611,7 @@
                                 <!-- TASK FOOT -->
                                 <div class="tasks__foot">
                                     <div class="tasks__client">
-                                        <div class="tasks__position">Заказчик:</div>
+                                        <div class="tasks__position">Заказчик / Компания:</div>
                                         <a class="tasks__profile" href="#">
                                             <img class="tasks__avi" src="images/profile-photo-2.png" alt="tasks avi">
                                             <div class="tasks__name">Азизбек Иброгимов</div>
@@ -524,14 +623,11 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="tasks__bottom">
-                                <div class="tasks__amount">Просмотрено <span>30</span> из <span>10 066</span> заданий
-                                </div>
-                                <button class="btn btn_blue">Посмотреть еще</button>
+                        </div>
+                        <div class="tasks__bottom">
+                            <div class="tasks__amount">Просмотрено <span>30</span> из <span>10 066</span> заданий
                             </div>
-
-
+                            <button class="btn btn_blue">Посмотреть еще</button>
                         </div>
                     </div>
                 </div>
@@ -691,138 +787,641 @@
                 <h2 class="filter__title filter-modal__head"><span>Категории заданий:</span>
                     <div class="filter-modal__close">&times;</div>
                 </h2>
-                <ul class="filter__list">
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Ремонт и строительство
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Курьерские услуги
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Грузоперевозки
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Уборка и помощь по хозяйству
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Виртуальный помощник
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Компьютерная помощь
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Мероприятия и промо акции
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Дизайн
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Разработка ПО
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Фото видео и аудио
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Установка и ремонт техники
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Красота и здоровье
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Ремонт цифровой техники
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Юридическая и бухгалтерская помощь
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Репетиторы и обучение
-                        </label>
-                    </li>
-
-                    <li class="filter__li">
-                        <label class="filter__item">
-                            <input type="checkbox" name="filter">
-                            Ремонт транспорта
-                        </label>
-                    </li>
-                </ul>
-
-
-
-            </div>
-            <div class="filter__region">
-                <h2 class="filter__title">Город / Регион:</h2>
-                <select class="filter__select" name="region">
-                    <option selected disabled>Вся страна</option>
-                    <option>Фергана</option>
-                    <option>Андижан</option>
-                    <option>Самарканд</option>
-                </select>
-            </div>
-            <a class="filter__btn btn btn_red" href="#">
-                <div class="filter__show">Показать</div>
-                <div class="filter__count">
-                    <span>1255</span> заданий
+              
+                <div class="filter__region filter__region_mb">
+                    <h2 class="filter__title">Город / Регион:</h2>
+                    <select class="filter__select" name="region">
+                        <option selected disabled>Вся страна</option>
+                        <option>Фергана</option>
+                        <option>Андижан</option>
+                        <option>Самарканд</option>
+                    </select>
                 </div>
-            </a>
+                <div class="filter__content">
+                    <h2 class="filter__title">Категории аренд:</h2>
+                    <ul class="filter__list">
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Недвижимость
+                                <span>102</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Электроника
+                                <span>200</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Бизнес и услуги
+                                <span>356</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Дом и сад
+                                <span>650</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Мода и стиль
+                                <span>788</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Транспорт
+                                <span>477</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Детский мир
+                                <span>500</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Хобби, отдых и спорт
+                                <span>401</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Строительство
+                                <span>705</span>
+                            </label>
+                        </li>
+
+                        <li class="filter__li">
+                            <label class="filter__item">
+                                <input type="checkbox" name="filter">
+                                Спецтехника
+                                <span>400</span>
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Тип объявления:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Посуточная аренда #1
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Посуточная аренда #2
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Посуточная аренда #1
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="filter__box mb">
+                    <h2 class="filter__title filter__title_mini">Ставка сум / за услугу:</h2>
+                    <div class="filter__wrap">
+                        <input type="number" name="from" placeholder="от" autocomplete="off">
+                        <input type="number" name="to" placeholder="до" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Подкатегории:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Санатории / Дома отдыха
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Хостелы
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Гостиницы / Отели
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Квартиры
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Дома / Дачи
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Количество спальных мест:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Одноместный номер
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Двухместный номер
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Трехместный номер
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Четырёхместный номер и
+более
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Правила:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Можно с детьми
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Разрешено курить
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Можно с животными
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Можно проводить праздники
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Удобствa:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Микроволновая печь
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Wi-Fi
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Трансфер
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Утюг
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Телевизор
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Санузел внутри номера
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Холодильник
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Кондиционер
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Стиральная машина
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Фен
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Парковка
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Сейф Терраса / Балкон
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Плита
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Камин
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Гараж
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Мангал / Барбекю
+                                </label>
+                            </li>
+                            
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Тапчан
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Водоснабжение
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Отопление
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Беседка
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Дополнительные преимущества: </div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Бассейн
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Баня / Сауна
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        Бильярд
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Караоке
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Настольный тенис
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Спортзал
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Теннисный корд
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Футбольное поле
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Баскетбольная площадка
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Настольный футбол
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    SPA
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Инфраструктура:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Парк / Зеленая зона
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Рестораны / Кафе
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Магазины / Супермаркеты
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        Детская площадка
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Питание:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Завтрак
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        Полупансион
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        Пансион
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        Все включено
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                        С собственной кухней
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter__region">
+                    <div class="filter-select">
+                        <div class="filter-select__trigger">
+                            <div class="filter-select__name">Категория номера:</div>
+                            <img class="filter-select__arrow" src="images/arrow-downs.svg" alt="arrow icon">
+                        </div>
+
+                        <ul class="filter-select__list">
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Эконом
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Стандарт
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Полулюкс
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="filter-select__label">
+                                    <input type="checkbox" name="filter checks">
+                                    Люкс
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a class="filter__btn btn btn_red" href="#">
+                    <div class="filter__show">Показать</div>
+                    <div class="filter__count">
+                        <span>1255</span> обьявлений
+                    </div>
+                </a>
+
+
+
+            </div>
+          
+        
         </div>
     </div>
 
