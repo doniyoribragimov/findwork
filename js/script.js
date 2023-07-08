@@ -165,6 +165,10 @@ $(function () {
         $(this).parent('.filter-select').toggleClass('active')
     })
 
+    $('.tasks__heart').on('click', function(){
+        $(this).toggleClass('active')
+    })
+
 
     $('.cabinet__seltype').on('click', function () {
         $(this).siblings().removeClass('active')
@@ -570,6 +574,7 @@ closeModal('.filter-modal', true)
 closeModal('.modal-details', true)
 closeModal('.modal-tasks', true)
 closeModal('#modalExpired', true)
+closeModal('.preview-modal', true)
 
 // STARTER TABS
 
@@ -593,6 +598,7 @@ createTab('.starter__tab', '.starter__content')
 createTab('.modal-auth__tab', '.modal-auth__content')
 createTab('.cabinet__categories-item', '.cabinet__viewing')
 createTab('.client-page__tab', '.client-page__content')
+createTab('.favourites__tab', '.favourites__content')
 
 
 
@@ -967,4 +973,5 @@ createModal('#modal-resume', '.modal-profile__close', '.info__btn')
 createModal('#modal-resume', '.modal-profile__cancel', '.info__btn')
 
 createModal('#modalExpired', '.modal-info .modal-profile__close', '#checkTrigger')
+createModal('.preview-modal', '.preview-modal__close', '.previewTrigger', true)
 

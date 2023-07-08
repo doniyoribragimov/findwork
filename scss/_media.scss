@@ -819,6 +819,16 @@
         }
     }
 
+    .favs{
+        right: 50px;
+    }
+
+    .preview-modal{
+        .duty{
+            flex: unset
+        }
+    }
+
 }
 
 @media (max-width: 1600px) {
@@ -899,6 +909,14 @@
     .tarif{
         &__inner{
             gap: 25px;
+        }
+    }
+
+    .freelancer{
+        &__main{
+            padding-top: 40px;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
     }
 
@@ -1315,6 +1333,12 @@
 
         .complain{
             margin: unset;
+        }
+    }
+
+    .preview-modal{
+        .duty{
+            width: 80%;
         }
     }
 }
@@ -3684,7 +3708,6 @@
 
         &__popover {
             padding: 12px;
-            top: -130px;
 
             &::before {
                 right: unset;
@@ -4131,6 +4154,10 @@
 
         &__profile {
             width: fit-content;
+        }
+
+        &__main{
+            padding-top: 0;
         }
     }
 
@@ -6244,7 +6271,6 @@
         }
     }
 
-
     .tarif-overall{
         &__name{
             flex-wrap: wrap;
@@ -6260,6 +6286,10 @@
             .searchbar__content{
                 grid-column-start: span 2;
                 order: -1;
+            }
+
+            .searchbar-view{
+                justify-self: end;
             }
 
             .filters__btn{
@@ -6289,6 +6319,39 @@
    
     }
 
+    .favs{
+        right: 20px;
+        bottom: 10px;
+        &__icon{
+            height: 50px;
+            width: 50px;
+        }
+
+        &__per{
+            font-size: 16px;
+            height: 25px;
+            width: 25px;
+        }
+    }
+
+    .favourites{
+        &__tabs{
+            gap: 12px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        &__tab{
+            padding: 10px 16px;
+            font-size: 16px;
+        }
+    }
+
+    .preview-modal{
+        .duty{
+            width: 90%;
+        }
+    }
+
 
 }
 
@@ -6299,6 +6362,12 @@
         gap: 10px;
         &__name{
             font-size: 16px;
+        }
+    }
+
+    .preview-modal{
+        .duty{
+            width: 95%;
         }
     }
 
@@ -6519,8 +6588,11 @@
 
     .freelancer-review {
         &__popover {
-            top: -145px;
             width: 260px;
+        }
+
+        .rate-btn{
+            font-size: 12px;
         }
     }
 

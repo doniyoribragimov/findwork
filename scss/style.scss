@@ -315,8 +315,15 @@
         transition: all 0.2s;
 
         &:hover {
-            background-color: rgba($darkBlue, 0.1);
+            background-color: #dde5ff;
         }
+    }
+
+    &__message-tag{
+        font-size: 12px;
+        font-weight: 600;
+        color: $darkBlue;
+
     }
 
     &__message-write {
@@ -2743,9 +2750,38 @@
         display: flex;
         position: absolute;
         top: 0;
-        right: 35px;
+        right: 55px;
         display: flex;
         gap: 12px;
+    }
+
+    &__heart{
+        position: absolute;
+        top: 7px;
+        right: 13px;
+        transition: all 0.2s;
+        cursor: pointer;
+        z-index: 9;
+        
+        svg{
+            height: 25px;
+            width: 25px;
+        }
+
+        path{
+            fill: #fff;
+            stroke: $darkBlue;
+            stroke-width: 2px;
+            &:first-child{
+                stroke: none;
+            }
+        }
+        
+        &.active{
+            path{
+                fill: $darkBlue;
+            }
+        }
     }
 
     &__remote{
@@ -2848,7 +2884,7 @@
         justify-content: space-between;
         position: relative;
         &_badge{
-            padding-right: 250px;
+            padding-right: 260px;
         }
     }
 
@@ -2927,10 +2963,11 @@
     }
 
     &__icon {
-        padding: 5px;
         background: #F8F8F8;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
+        height: 24px;
+        width: 24px;
     }
 
     &__bold {
@@ -3030,6 +3067,20 @@
         transition: all 0.2s;
         &:hover{
             border: 1px solid $darkBlue;
+        }
+    }
+
+    .tasks__heart{
+        right: unset;
+        left: 10px;
+        path{
+            stroke: #fff;
+        }
+
+        &.active{
+            path{
+                stroke: $darkBlue;
+            }
         }
     }
 
@@ -3346,7 +3397,7 @@
     &__bloks {
         padding: 25px;
         background-color: #fff;
-
+        position: relative;
         .freelancer__item {
             padding: 0;
         }
@@ -3456,7 +3507,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        padding-bottom: 40px;
         .freelancer__title {
             margin-bottom: 8px;
         }
@@ -3545,6 +3596,7 @@
     &__place {
         text-align: right;
         color: $grey;
+        padding-top: 10px;
     }
 
     &__city {
@@ -3774,8 +3826,9 @@
         border-radius: 10px;
         padding: 25px 12px;
         position: absolute;
-        top: -230px;
+        bottom: 160%;
         left: -135px;
+        z-index: 5;
         width: 320px;
         visibility: hidden;
         opacity: 0;
@@ -10911,5 +10964,127 @@
     }
 }
 
+
+.favs{
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 12;
+    @extend %normalHover;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        z-index: -1;
+    }
+    &__icon{
+        height: 70px;
+        width: 70px;
+    }
+
+    &__per{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background-color: #fff;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: $darkBlue;
+        box-shadow: 0 0 10px rgba($blue, 0.2);
+    }
+}
+
+
+.favourites{
+    display: grid;
+    gap: 32px;
+    &__tabs{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+
+    }
+
+    &__tab{
+        color: #fff;
+        font-weight: 600;
+        white-space: nowrap;
+        font-size: 18px;
+        padding: 12px 30px;
+        background-color: $darkBlue;
+        border-radius: 10px;
+        border: 2px solid $darkBlue;
+        &.active{
+            background-color: #fff;
+            color: $darkBlue;
+        }
+    }
+
+    &__contents{
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__content{
+        height: 0;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        &.active{
+            height: auto;
+            position: relative;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+
+.preview-modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(#000, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    @extend %hideShow;
+    .duty{
+        height: 90%;
+        width: 60%;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    &__close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 30px 0;
+    }
+}
 
 @import 'media'
